@@ -59,13 +59,10 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff', 8)
-        sendmsg('up 50')
-        sendmsg('forward 200')
-
-
-
-
-
+        sendmsg('up 50', 8)
+        sendmsg('forward 250', 8)
+        #sendmsg('go 250 0 60 60', 8)
+        sendmsg('')
 
 
         sendmsg('land')
