@@ -44,10 +44,10 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\n Alex Thornton")
-print("Partner: Aaron Arce")
-print("Program Name: Competition ")
-print("Date: 4-24-23 ")
+print("\nAaron Arce")
+print("Partner: Alexander Thornton")
+print("Program Name: Competition")
+print("Date: 4/24/2023")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -62,10 +62,8 @@ try:
         sendmsg('up 100 ', 12)
         sendmsg('forward 210', 8)
         sendmsg('go 180 0 80 20', 15)
-
-
+        sendmsg('curve 75 250 0 -75 -250 0 30', 8)
         sendmsg('land')
-
         print('\nGreat Flight!!!')
 
     else:
@@ -75,3 +73,4 @@ except KeyboardInterrupt:
 
 breakr = True
 sock.close()
+
